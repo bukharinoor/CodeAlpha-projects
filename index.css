@@ -1,0 +1,100 @@
+  /* General Styling */
+body {
+  background-image: url('/image.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: skyblue
+}
+
+.todo-container {
+  background-color: #007BFF; /* Semi-transparent background */
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Input and Buttons */
+.task-input, .search-filter {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input, .search-filter input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select, button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Task List */
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.task-item.low {
+  border-left: 5px solid green;
+}
+
+.task-item.medium {
+  border-left: 5px solid orange;
+}
+
+.task-item.high {
+  border-left: 5px solid red;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+.task-text {
+  flex: 1;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
